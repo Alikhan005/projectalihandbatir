@@ -1,38 +1,35 @@
-# Drone Attack
+# Атака дронов
 
-Developed with Unreal Engine 5.2
+Разработано на Unreal Engine 5.2
 
-# Game Mechanics
+# Игровая механика
 
-The game has various game states, health and ammo pick ups and simple user interface. Enemies have thier own patrol paths and alert when the player is close.
+В игре есть различные игровые состояния, подбор здоровья и боеприпасов и простой пользовательский интерфейс. У врагов есть собственные пути патрулирования, и они предупреждают, когда игрок приближается.
 
-# Health and Stamia
+# Здоровье и выносливость
 
-The game has health bar at the top of the screen to show when the player has been damaged. The player can heal by walking by health pickups. The stamia bar is at the bottom.
+В игре есть полоса здоровья в верхней части экрана, которая показывает, когда игрок получил урон. Игрок может исцелиться, пройдя мимо подбора здоровья. Полоса выносливости находится внизу.
 
-# Movement and Animations
+# Движение и анимация
 
-The movement system was created using unreal engine blueprints and state machine to transition between different animations.
-The sprinting animation is enabled by holding the shift button and when the button is released the player is in walking state.
-The jumping movement is enabled by pressing the space bar.
+Система движения была создана с использованием чертежей движка unreal и конечного автомата для перехода между различными анимациями.
+Анимация бега включается удерживанием кнопки Shift, а когда кнопка отпускается, игрок переходит в состояние ходьбы.
+Прыжок включается нажатием пробела.
 
-# Game States
-## Warmup State:
-- The countdown timer will appear on the screen. Counting down to 3.
-- The player's movement is disabled during this period.
-## In Progress State:
-- Show the time remaining to eliminate all the drones in the encounter.
-- The number of drones left.
-- Drones are patrolling.
-## Out of Time State:
-- When the player runs out of time and there are still drones on the map, the player loses.
-- Lost the Game!
-## Player Died:
-- If the player died, the game is lost.
-## Player Won:
-- If the player successfully eliminates all the drones before the time runs out.
-# Enemy AI
-The drones all have thier individual patrol points. They have different patrolling paths. Can be aggro when player gets too close or starts shooting.
-
-# DevLog:
-[DevLog Doc](https://docs.google.com/document/d/13kHtDW3JpqM30btkvsuDmZV94Z_lFjCVKeO1Twa4A64/edit?usp=sharing)
+# Состояния игры
+## Состояние разминки:
+- На экране появится таймер обратного отсчета. Отсчет до 3.
+- В этот период движение игрока отключено.
+## Состояние выполнения:
+- Показывает время, оставшееся до уничтожения всех дронов в схватке.
+- Количество оставшихся дронов.
+- Дроны патрулируют.
+## Состояние окончания времени:
+- Когда у игрока заканчивается время, а на карте все еще есть дроны, игрок проигрывает.
+- Проиграл игру!
+## Игрок умер:
+- Если игрок умер, игра проиграна.
+## Игрок победил:
+- Если игрок успешно уничтожит всех дронов до истечения времени.
+# Вражеский ИИ
+У всех дронов есть свои индивидуальные точки патрулирования. У них разные пути патрулирования. Могут быть агрессивными, когда игрок подходит слишком близко или начинает стрелять.
